@@ -16,10 +16,10 @@ class Result extends StatelessWidget {
   Widget build(BuildContext context) {
     String msg = '';
     Widget img;
-    if (0 <= count && count <= 1) {
+    if (0 <= count && count <= 4) {
       msg = 'Bad';
       img = Image.asset('assets/images/lose.jpg');
-    } else if (2 <= count && count <= 4) {
+    } else if (5 <= count && count <= 8) {
       msg = 'So so';
       img = Image.asset('assets/images/norm.jpg');
     } else {
