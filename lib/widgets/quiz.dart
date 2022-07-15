@@ -21,9 +21,9 @@ class Quiz extends StatelessWidget {
         ),
         ...questionData.questions[index].answers
             .map((e) => Answer(
-                  title: e['answer'],
+                  title: e.text,
                   onChangeAnswer: onChangeAnswer,
-                  isCorrect: e.containsKey('isCorrect') ? true : false,
+                  isCorrect: e.isCorrect ? true : false,
                 ))
             .toList(),
       ],

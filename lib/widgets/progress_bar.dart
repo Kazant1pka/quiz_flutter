@@ -5,8 +5,8 @@ class ProgressBar extends StatelessWidget {
       : super(key: key);
 
   final icons;
-  final count;
-  final total;
+  final int? count;
+  final int? total;
 
   @override
   Widget build(BuildContext context) {

@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:quiz/models/images.dart';
 
 class Result extends StatelessWidget {
   final int count;
@@ -18,13 +19,13 @@ class Result extends StatelessWidget {
     Widget img;
     if (0 <= count && count <= 4) {
       msg = 'Bad';
-      img = Image.asset('assets/images/lose.jpg');
+      img = Image.asset(AppAssets.loser);
     } else if (5 <= count && count <= 8) {
       msg = 'So so';
-      img = Image.asset('assets/images/norm.jpg');
+      img = Image.asset(AppAssets.normal);
     } else {
       msg = 'Great!!!';
-      img = Image.asset('assets/images/great.jpg');
+      img = Image.asset(AppAssets.winner);
     }
 
     return Container(
